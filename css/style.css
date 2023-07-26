@@ -165,6 +165,10 @@ p {
   border-radius: 2rem;
   color: var(--white-color);
   display: inline-block;
+  transition: 0.3s;
+}
+.according-btn:hover {
+  background: var(--blue-color-dark);
 }
 .blue-box {
   text-align: center;
@@ -213,8 +217,12 @@ header {
   text-decoration: none;
   color: var(--white-color);
   text-transform: uppercase;
+  transition: 0.3s;
 }
-
+.btn-topbar a:hover {
+  color: var(--white-color);
+  background: var(--blue-color-dark);
+}
 .btn-topbar a {
   background: var(--white-color);
   display: -webkit-box;
