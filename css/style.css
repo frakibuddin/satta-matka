@@ -395,7 +395,7 @@ header {
 /* Responsive mediad quary */
 @media (max-width: 550px) {
   html {
-    font-size: 60%;
+    font-size: 59%;
   }
   .btn-topbar a {
     -webkit-box-orient: vertical;
@@ -409,7 +409,12 @@ header {
     font-size: 1.5rem;
   }
   .whatsapp-img {
-    max-width: 100%;
+    max-width: 85%;
+    margin: auto;
+  }
+  .according-btn {
+    font-size: 1.8rem;
+    padding: 1rem 7rem;
   }
   .according-box-w .according-footer {
     padding: 3rem 1rem;
@@ -432,12 +437,41 @@ header {
   .text-justify-sm {
     text-align: justify;
   }
+
+  .result-according-inner h2 {
+    font-size: 2.5rem;
+  }
+
+  .list li,
+  .list-with-line li {
+    font-size: 1.8rem;
+  }
+  .light-blue-heading {
+    font-size: 2.2rem;
+  }
+  .blue-sml-heading {
+    font-size: 2.2rem;
+  }
+  .answer {
+    font-size: 1.7rem;
+  }
   .according-box-w .according-header h2,
   h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  .white-round-box {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 57%;
   }
 }
 @media (max-width: 350px) {
+  html {
+    font-size: 55%;
+  }
   .according-btn {
     padding: 1.2rem 0;
     width: 80%;
