@@ -81,6 +81,10 @@ h2 {
 .py-3 {
   padding: 3rem 0 !important;
 }
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
 p {
   line-height: 2.7rem;
 }
@@ -147,7 +151,7 @@ p {
   color: var(--white-color);
 }
 .according-box-w .according-header h3 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 600;
   color: var(--white-color);
   margin-top: 1.2rem;
@@ -200,6 +204,9 @@ header {
   border: 0.3rem solid var(--blue-color);
   border-radius: 2.7rem;
 }
+.hero-text p {
+  font-weight: 500;
+}
 .btn-topbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,18 +219,21 @@ header {
   background: #74b2fa;
   padding: 1.5rem 2rem;
   gap: 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+}
+
+.btn-topbar a:hover {
+  color: var(--white-color);
+  background: var(--blue-color-dark);
 }
 .btn-topbar a {
   text-decoration: none;
   color: var(--white-color);
   text-transform: uppercase;
   transition: 0.3s;
-}
-.btn-topbar a:hover {
-  color: var(--white-color);
-  background: var(--blue-color-dark);
-}
-.btn-topbar a {
   background: var(--white-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,14 +248,11 @@ header {
   color: var(--blue-color);
   padding: 0.5rem 1rem;
 }
+.btn-topbar a img {
+  width: 2rem;
+}
 .topbar-wrapper {
   position: relative;
-}
-.btn-topbar {
-  position: absolute;
-  top: 4rem;
-  left: 0;
-  width: 100%;
 }
 
 /* LIVE SATTA MATKA RESULT style */
@@ -288,8 +295,8 @@ header {
   );
   background: -o-linear-gradient(left, #3c6492, #6095d3);
   background: linear-gradient(90deg, #3c6492, #6095d3);
-  padding: 1rem 0;
-  width: 10rem;
+  padding: 1.2rem 0;
+  width: 11rem;
   text-decoration: none;
   color: var(--white-color);
   border-radius: 0.5rem;
@@ -309,6 +316,7 @@ header {
   padding: 1.5rem 3rem;
   border-radius: 1.8rem;
   border: 0.3rem solid var(--blue-color);
+  font-weight: 600;
 }
 .whatsapp-img {
   max-width: 42rem;
@@ -343,7 +351,7 @@ header {
   font-size: 2rem;
   color: var(--blue-color);
   font-weight: 600;
-  padding: 1.5rem 0;
+  padding: 1.8rem 0;
 }
 .list-with-line li:last-child {
   border-bottom: 0;
@@ -356,6 +364,22 @@ header {
   font-weight: 500;
   padding: 0.5rem 0;
   font-size: 1.8rem;
+}
+/* animetion text*/
+.animation-text {
+  overflow: hidden;
+}
+.animation-text div {
+  white-space: nowrap;
+  animation: textsAnimate 20s linear infinite;
+}
+@keyframes textsAnimate {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
 /* Question section style */
@@ -395,21 +419,32 @@ header {
 /* Responsive mediad quary */
 @media (max-width: 550px) {
   html {
-    font-size: 59%;
+    font-size: 57%;
+  }
+  body {
+    line-height: 100%;
+  }
+  p {
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+  }
+  section {
+    padding: 1rem 0;
   }
   .btn-topbar a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 0;
+    gap: 0.5rem;
     padding: 1rem 0.8rem;
+    width: 9rem;
   }
   .btn-topbar a span {
     font-size: 1.5rem;
   }
   .whatsapp-img {
-    max-width: 85%;
+    max-width: 90%;
     margin: auto;
   }
   .according-btn {
@@ -417,10 +452,13 @@ header {
     padding: 1rem 7rem;
   }
   .according-box-w .according-footer {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
   }
   .white-round-box {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+  .question-inner {
+    margin: 2.5rem 0;
   }
   .blue-box {
     padding: 2rem 1rem;
@@ -444,16 +482,17 @@ header {
 
   .list li,
   .list-with-line li {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .light-blue-heading {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
   .blue-sml-heading {
     font-size: 2.2rem;
   }
   .answer {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
   .according-box-w .according-header h2,
   h2 {
@@ -462,10 +501,42 @@ header {
   .white-round-box {
     font-size: 1.9rem;
   }
+  .hindi-txt {
+    font-size: 2rem;
+  }
+  .dn-mobile {
+    display: none;
+  }
+  .mt-8 {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+  }
+  .btn-topbar {
+    top: 12rem;
+  }
+  .mt-0 {
+    margin-top: 0;
+  }
+  .hover-scale {
+    width: 70%;
+    margin: auto;
+  }
+  .gradient-box {
+    padding: 1rem 1rem;
+  }
+  .list-with-line li {
+    border-bottom: 0.2rem solid var(--blue-color);
+  }
+  .mt-2 {
+    margin-top: 1.5rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
 }
 @media (max-width: 450px) {
   html {
-    font-size: 57%;
+    font-size: 55%;
   }
 }
 @media (max-width: 350px) {
@@ -476,11 +547,11 @@ header {
     padding: 1.2rem 0;
     width: 80%;
   }
-  .hover-scale {
-    width: 80%;
-    margin: auto;
-  }
+
   .small-btns {
     gap: 2rem;
+  }
+  .btn-topbar {
+    top: 14rem;
   }
 }
