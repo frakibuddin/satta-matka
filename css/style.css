@@ -133,6 +133,9 @@ p {
 .border-0 {
   border: transparent !important;
 }
+.text-justify-sm {
+  font-size: 1.4rem;
+}
 
 /* white according-box */
 .according-box-w {
