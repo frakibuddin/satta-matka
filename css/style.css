@@ -134,7 +134,7 @@ p {
   border: transparent !important;
 }
 .text-justify-sm {
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
 }
 
 /* white according-box */
